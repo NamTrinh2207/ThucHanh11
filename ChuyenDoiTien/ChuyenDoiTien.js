@@ -5,13 +5,13 @@ let To = document.getElementById('To').value;
 let MyShow;
 
 if (From=='VND'&&To=='USD'){
-    MyShow = 'Kết quả = '+ (Amount/23000)+ '$';
+    MyShow = 'Result = '+ (Amount/23000)+ '$';
 }else if (From=='USD'&&To=='VND'){
-    MyShow = 'Kết quả = '+ (Amount*23000)+ 'Đồng';
+    MyShow = 'Result = '+ (Amount*23000)+ 'Đồng';
 }else if (From=='VND' && To=='VND'){
-    MyShow = 'Kết quả = '+Amount + 'Đồng';
+    MyShow = 'Result = '+Amount + 'Đồng';
     }else{
-    MyShow = 'Kết quả = '+Amount + '$';
+    MyShow = 'Result = '+Amount + '$';
     }
 document.getElementById('MyShow').innerHTML=MyShow;
 }
